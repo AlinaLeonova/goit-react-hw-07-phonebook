@@ -1,0 +1,15 @@
+.Logo-slideIn-appear{
+    transform: translateX(-100%);
+
+}
+
+.Logo-slideIn-appear-active{
+    transform: translateX(0);
+    transition: transform 500ms linear;
+}
+
+.Logo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    color:#5085A5;
+}
