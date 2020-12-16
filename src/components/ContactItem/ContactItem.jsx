@@ -17,8 +17,6 @@ const ContactItem = ({ contact , onRemoveContact}) => {
   )
 }
 
-
-
 ContactItem.propTypes = {
   contact: PropTypes.objectOf(PropTypes.string).isRequired
 }
@@ -30,6 +28,5 @@ const mapStateToProps = state=>{
 const mapDispatchToProps = (dispatch, ownProps) => (
   {onRemoveContact: () => dispatch(contactsOperations.onRemoveContacts(ownProps.contact.id))}
 );
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(ContactItem)
