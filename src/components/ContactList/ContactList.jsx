@@ -1,6 +1,5 @@
 import React from "react"
 import ContactItem from "../ContactItem"
-import PropTypes, { arrayOf } from "prop-types"
 import { CSSTransition, TransitionGroup } from "react-transition-group"
 import "./ContactList.css"
 import { connect } from "react-redux"
@@ -27,10 +26,6 @@ const ContactList = ({ contacts, onRemoveContact }) => {
   )
 }
 
-// ContactList.propTypes = {
-//   contacts: arrayOf(PropTypes.object)
-
-// }
 
 const mapStateToProps = (state) => ({
  contacts: contactsSelectors.getFilteredContacts(state),
